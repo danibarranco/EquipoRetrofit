@@ -81,7 +81,7 @@ public class AddEquipo extends AppCompatActivity {
                     nuevoEquipo.setEstadio(etCampo.getText().toString());
                     nuevoEquipo.setCiudad(etCiudad.getText().toString());
                     nuevoEquipo.setAforo(Long.valueOf(etAforo.getText().toString()));
-                    //Guardar imagen en servidor
+                    //Guardar imagen en servidor AWS
                     if (newPhoto){
                         saveSelectedImageInFile(imageUri);
                         nuevoEquipo.setEscudo("/web/equipo/public/img/"+nombre);
